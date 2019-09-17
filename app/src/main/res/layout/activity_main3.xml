@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recuperar Datos"
+        android:textColor="#0C0808"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Archivo 1"
+            android:textSize="20dp"
+            android:id="@+id/rb_RecuperarDatos_Archivo1"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Archivo 2"
+            android:textSize="20dp"
+            android:checked="true"
+            android:id="@+id/rb_RecuperarDatos_Archivo2"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Archivo 3"
+            android:textSize="20dp"
+            android:id="@+id/rb_RecuperarDatos_Archivo3"
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="45dp"
+        android:padding="20dp"
+        android:id="@+id/btnRecuperarDatos_Abrir"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/GridlayoutRecDat"
+            />
+
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exportar a XLS"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="45dp"
+        android:padding="20dp"
+        android:id="@+id/btnRecuperarDatos_Exportar"/>
+
+</LinearLayout>
